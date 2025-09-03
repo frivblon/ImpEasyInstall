@@ -14,3 +14,10 @@ Agregar un archivo log
 dividirlo en módulos (.psm1) y un script principal (.ps1) que importe las funciones.
 Privilegios de administrador: para acciones como limpiar spooler o instalar drivers, podrías detectar desde el inicio si el script se ejecuta sin permisos y avisar de inmediato.
 Reutilización de código: repites bastante el patrón de listar impresoras, mapearlas en un @{} y pedir selección. Podrías crear una función auxiliar tipo Select-Printer para simplificar.
+
+
+git remote add origin https://github.com/frivblon/ImpEasyInstall.git
+
+
+Para crear un exe
+ps2exe -inputFile '.\ImpEasyInstall.ps1' -outputFile '.\ImpEasyInstall.exe'
