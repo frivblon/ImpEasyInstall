@@ -1,0 +1,16 @@
+Que al final haga una animación de despedida
+agregar el desinstalar y volver a instalar el mismo driver 
+dar a elegir una opción para imprimir una hoja de prueba 
+opción para ver si tiene conexión la impresora
+
+Agregar opción para instalar desde usb
+Agregar una opción para buscar controladores de diferentes marcas
+crear un icono 
+Agregar opción para limpieza impresora
+agregar para abrir la cola de impresión
+Resolver bug de instalar impresora y aun que pongas una ip a lo tonto la instala y te dice que si jala jaja que pedo
+
+Agregar un archivo log 
+dividirlo en módulos (.psm1) y un script principal (.ps1) que importe las funciones.
+Privilegios de administrador: para acciones como limpiar spooler o instalar drivers, podrías detectar desde el inicio si el script se ejecuta sin permisos y avisar de inmediato.
+Reutilización de código: repites bastante el patrón de listar impresoras, mapearlas en un @{} y pedir selección. Podrías crear una función auxiliar tipo Select-Printer para simplificar.
